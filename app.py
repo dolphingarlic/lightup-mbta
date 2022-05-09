@@ -222,4 +222,4 @@ async def get_trains():
                 if i not in ALL_STOPS:
                     print(i)
 
-            return ''.join('1' if stop in lit_stops else '0' for stop in ALL_STOPS)
+            return f"^{''.join('1' if stop in lit_stops else '0' for stop in ALL_STOPS)}$"
